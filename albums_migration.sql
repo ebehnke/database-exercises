@@ -1,11 +1,13 @@
 USE codeup_test_db;
 
-CREATE TABLE IF NOT EXISTS albums2 (
-  id INT,
-  artist CHAR(50),
-  name CHAR(50),
-  release_date INT,
-  sales DOUBLE,
-  genre VARCHAR(250),
-  age INT
+DROP TABLE IF EXISTS albums;
+
+CREATE TABLE albums (
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  artist VARCHAR(128),
+  name VARCHAR(128),
+  release_year YEAR,
+  sales DECIMAL(20,10),
+  genre VARCHAR(128),
+  PRIMARY KEY (id)
   );
