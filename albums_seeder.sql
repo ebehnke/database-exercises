@@ -1,11 +1,13 @@
 USE codeup_test_db;
 
+truncate albums;
+
 INSERT INTO albums (artist, name, release_year, genre, sales)
 VALUES
     ('John Travolta', 'Grease: The Original Soundtrack from the Motion Picture', '1978', 'Rock and roll', '14.4'),
     ('Led Zeppelin','Led Zeppelin IV','1971','Hard rock, heavy metal, folk, rock','14.4'),
     ('Michael Jackson','Bad','1987','Pop, funk,rock','29.0'),
-    ('ALanis Morissette','Jagged Little Pill','1995','Alternative rock','24.4'),
+    ('Alanis Morissette','Jagged Little Pill','1995','Alternative rock','24.4'),
     ('Celine Dion','Lets Talk About Love','1997','Pop, sof rock','19.3'),
     ('The Beatles','Sgt. Peppers Lonely Hearts Club Band','1967','Rock','18.2'),
     ('Patrick Swayze','Dirty Dancing','1987','Pop, rock, R&B','17.9'),
