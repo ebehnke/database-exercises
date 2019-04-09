@@ -6,11 +6,10 @@ select release_year as 'Album Year' from albums where name = 'Sgt. Peppers Lonel
 
 select genre as 'Genres of Nevermind' from albums where artist = 'Nirvana';
 
+select name as 'Albums of the 90s' from albums where release_year >= '1990' and release_year <= '1999';
 
+select name as 'Albums of the 90s' from albums where release_year between '1990' and '1999';
 
+select artist as 'Artist', name as 'Less than 20mil certified sales' from albums where sales < '20.00';
 
-
---The genre for Nevermind
---Which albums were released in the 1990s
---Which albums had less than 20 million certified sales
---All the albums with a genre of "Rock". Why do these query results not include albums with a genre of "Hard rock" or "Progressive rock"?
+select artist as 'Artist', name as 'Rock Albums' from albums where genre = 'rock';
