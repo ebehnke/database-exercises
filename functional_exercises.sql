@@ -39,7 +39,7 @@ select last_name from employees where last_name like "e%" or last_name like "%e"
 
 select last_name from employees where last_name like "e%" and last_name like "%e";
 
-select first_name, last_name, birth_date, hire_date, "Days since hire"
+select first_name, last_name, birth_date, hire_date, (concat(datediff(now(), hire_date))) as "days worked"
 from employees
 where
       hire_date like "199%" and
