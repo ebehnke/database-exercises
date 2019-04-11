@@ -12,5 +12,19 @@ select concat(emp_no, ' - ', last_name, ', ', first_name) as full_name, birth_da
 from employees
 limit 10;
 
+
+show tables;
+describe departments;
+describe dept_emp;
+describe dept_manager;
 describe employees;
+describe salaries;
+describe titles;
+
+use codeup_test_db;
+
+select * from albums;
+
+select distinct artist, name
+from albums;
 
