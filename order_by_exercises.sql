@@ -46,4 +46,3 @@ where
 order by birth_date asc, hire_date desc;
 
 select last_name from employees where last_name like "%q%" and not last_name like "%qu%";
-
