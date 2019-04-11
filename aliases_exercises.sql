@@ -28,3 +28,8 @@ select * from albums;
 select distinct artist, name
 from albums;
 
+# alter table albums
+# add unique (artist, name);
+
+# insert into albums(primary key (artist, name))
+
