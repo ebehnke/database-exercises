@@ -6,7 +6,7 @@
 -- Find all the employees with the same hire date as employee 101010 using a sub-query.
 -- 69 Rows
 
-select count(*)
+select *
 from employees
 where hire_date in (
   select hire_date
@@ -16,7 +16,7 @@ where hire_date in (
 -- Find all the titles held by all employees with the first name Aamod.
 -- 314 total titles, 6 unique title
 
-select title
+select title -- could use distinct instead of group by
 from titles
 where emp_no in (
   select emp_no
@@ -42,6 +42,12 @@ where gender = 'F' and
         )
 ;
 
+-- join version
+select first_name, last_name
+from employees
+join dept_manager dm
+  on employees.emp_no = dm.emp_no and dm.to_date > now()
+where gender = 'F';
 
 
 # Find all the department names that currently have female managers.
