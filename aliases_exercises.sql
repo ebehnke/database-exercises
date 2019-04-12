@@ -28,6 +28,8 @@ select * from albums;
 select distinct artist, name
 from albums;
 
+show create table employees.emp_no;
+
 # alter table albums
 # add unique (artist, name);
 
